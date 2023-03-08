@@ -1,7 +1,40 @@
-POST http://localhost:3000/login
-Content-Type:application/json
-
+POST http://localhost:3000/login/
+Content-Type: application/json
 {
-    "username":"dhanu123",
-    "password":"dhanu@456",
+    "username":"rahul123",
+    "password": "rahul@456"
 }
+
+
+###
+GET http://localhost:3000/states/
+Authorization : Bearer 
+
+###
+GET http://localhost:3000/states/
+
+###
+
+
+GET http://localhost:3000/states/1/
+
+###
+
+POST http://localhost:3000/district/
+Content-Type:application/json
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+###
+GET http://localhost:3000/district/1/
+
+###
+GET http://localhost:3000/states/:stateId/stats/
+
+###
+GET http://localhost:3000/districts/:districtId/details/
